@@ -6,16 +6,16 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,Carlito]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 
 % moderncv themes
-\moderncvstyle{classic}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{carlos}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
 \moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
 %\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
 \nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
 
 % character encoding
-%\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
 %\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
 
 % adjust the page margins
@@ -24,15 +24,16 @@
 %\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\firstname{Alan}
-\familyname{Orth}
+\firstname{Carlos}
+\familyname{Quiros}
 %\title{A great man}                          % optional, remove / comment the line if not wanted
 % \address{Nairobi}{Kenya}    % optional, remove / comment the line if not wanted
-\mobile{+254 726 388 307}                     % optional, remove / comment the line if not wanted
-\email{aorth@mjanja.ch}                          % optional, remove / comment the line if not wanted
-\homepage{github.com/alanorth}                    % optional, remove / comment the line if not wanted
-%\extrainfo{additional information}            % optional, remove / comment the line if not wanted
-%\quote{The quieter you become, the more you are able to hear...}                            % optional, remove / comment the line if not wanted
+\mobile{+254 728 673 771}                     % optional, remove / comment the line if not wanted
+\email{cquiros@qlands.com}                          % optional, remove / comment the line if not wanted
+\social[linkedin]{https://cr.linkedin.com/in/qlands}                        % optional, remove / comment the line if not wanted
+\social[github]{https://github.com/qlands}                              % optional, remove / comment the line if not wanted
+%\extrainfo{www.qlands.com/cquirosDetailedCV.pdf}            % optional, remove / comment the line if not wanted
+\quote{\normalfont{\restoregeometry{Eighteen years experience in ICT in different capacities ranging from technical to managerial with over fifteen years supporting international agricultural research and development. Career interests have evolved from implementing tasks related to agricultural software programming, to more managerial activities in leading a research data management group and providing leadership and strategic guidance on how ICTs can address global agricultural challenges. Experience includes a long term posting in Kenya (thirteen years with the International Livestock Research Institute), two years as an advisor on ICTs for other organisations in East Africa and three years with the private sector in Costa Rica.}}}                            % optional, remove / comment the line if not wanted
 
 % to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
 %\makeatletter
@@ -42,6 +43,7 @@
 % bibliography with mutiple entries
 %\usepackage{multibib}
 %\newcites{book,misc}{{Books},{Others}}
+
 %----------------------------------------------------------------------------------
 %            content
 %----------------------------------------------------------------------------------
@@ -50,93 +52,66 @@
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
 
-\section{Experience}
-\subsection{Vocational}
-\cventry{2011--current}{Systems Analyst}{International Livestock Research Institute}{Nairobi, Kenya}{}{Oversee research computing infrastructure and support scientists\newline{}
-  \begin{itemize}
-  \item Automate role-based infrastructure deployment and configuration management using Ansible
-  \item Design and implement next-generation storage and computing platform using GlusterFS, SLURM, and 389 LDAP
-  \item Deploy KVM virtual machines for students, web applications, and test environments
-  \item Implement and maintain tape backups of research data using Amanda Backup
-  \item Maintain and deploy source code customizations of the \href{https://cgspace.cgiar.org}{CGIAR DSpace} institutional repository
-  \item Install and configure bioinformatics applications like BLAST+, QIIME, structure, and R
-  \item Deploy field data collection system using Android and ODK Collect/Aggregate
-  \item Give introduction to Linux courses and hold regular user group meetings
-  \end{itemize}}
-\cventry{2009--2011}{Linux Consultant}{International Livestock Research Institute}{Nairobi, Kenya}{}{{}
-  \begin{itemize}
-  \item Administer Rocks Linux cluster and bioinformatics applications
-  \item Provide technical support on network and server issues to Biotechnology group
-  \item Administer physical and virtual servers for students and researchers
-  \item Develop modules to supplement functionality of off-the-shelf LIMS
-  \item Develop standard operating procedures and train staff in their use
-  \end{itemize}}
-\cventry{2007--2009}{Lecturer and Systems Administrator}{Holy Rosary College}{Tala, Kangundo}{}{Volunteer with VSO Jitolee, Kenya\newline{}
-\begin{itemize}
-\item Manage and update Linux servers running Squid proxy, Apache, and Samba file services
-\item Troubleshoot satellite modem, routers, network cables, and LAN switches
-\item Maintain workstations for staff and student computer lab
-\item Taught courses:
-  \begin{itemize}
-  \item Intro to Programming and Algorithms (C++)
-  \item Network Essentials
-  \item Object-oriented Programming (C++)
-  \item Operating Systems II (Linux)
-  \end{itemize}
-\end{itemize}}
-\cventry{2004--2007}{Systems Administrator}{Upward Bound Organization}{Chico, CA}{}{{}
-\begin{itemize}
-\item Manage Mac OS X servers running Apache, Mailman, and OpenLDAP
-\item Manage student computer lab and network-attached student home directories
-\item Monitor security of public-facing servers, including remote administration over SSH
-\item Technical support and maintenance of staff workstations
-\item Write documentation of configuration and maintenance procedures for servers
-\item Interview and train replacement systems administrator upon my departure
-\end{itemize}}
-
-\subsection{Internships}
-\cventry{June, 2006}{Systems Administrator}{Chevron Corporation}{San Ramon, CA}{}{Three-month internship with the Technical Computing team\newline{}
-\begin{itemize}
-\item Write interactive Perl script to help administrators maintain synchronized application repositories on distributed Linux and Solaris servers
-\item Write interactive Perl script to ease installation and configuration of high-performance cluster nodes using SystemImager
-\end{itemize}}
-
-\cventry{June, 2005}{Systems Analyst}{Chevron Corporation}{San Ramon, CA}{}{Three-month internship with the Application Server Design team\newline{}
-\begin{itemize}
-\item Install and support Windows 2000/2003 servers and their web applications (.NET)
-\item Write documentation in preparation for annual team audit (SOX)
-\item Document F5 BIG-IP DNS settings used for fail over and geographic load balancing for internal and external corporate web applications
-\end{itemize}}
-
 \section{Education}
-\cventry{2002--2007}{Computer Information Systems}{California State University}{Chico}{\textit{3.19}}{Emphasis on Computer Science, minor in Business}  % arguments 3 to 6 can be left empty
+\cventry{2006--2007}{\textbf{MA}\normalfont{ Science and Technologies Studies}}{University of Maastricht}{The Netherlands}{}{\textit{Dissertation on The Socio-Technical Aspects Affecting the Adoption of Agricultural Information Systems}}  % arguments 3 to 6 can be left empty
+\cventry{1998--2002}{\textbf{BSc}\normalfont{ Computer Engineering}}{Universidad Latinoamérica de Ciencia y Tecnología}{Costa Rica}{}{}  % arguments 3 to 6 can be left empty
 
-\section{Computer skills}
-\cvitem{Proficient}{vim, KVM, git, bash, regular expressions, CSS, Apache httpd, mod\_rewrite, nginx}
-\cvitem{Intermediate}{MySQL, PostgreSQL, PHP, Apache Tomcat, gerrit, TLS, Jinja2}
-\cvitem{Padawan}{\LaTeX}
+\section{Experience}
+\subsection{Current position}
+\cventry{2011--to date}{Agricultural Information System Specialist}{International Livestock Research Institute}{Nairobi, Kenya}{}{\textit{Lead activities in the area of ICT’s for Research and Development (ICT4RD) and Research Data Management (RDM)}
+  \begin{itemize}
+  \item Oversee the data management in a portfolio of more than 15 research projects.
+  \item Supervise seven staff members including programmers, data managers and data clerks.
+  \item Analyse RDM and software gaps and provide progress reports to higher management levels.
+  \item Design, implement and manage 15 ICT projects.
+  \item Define the strategic direction and RDM priorities for the institute.
+  \item Advise projects in designing the architecture of complex ICTs for development.
+  \item Design and write the RDM policy and implementation plans.  
+  \end{itemize}}
+\subsection{Previous positions}
+\cventry{2010--2011}{Consultant on ICT's for Research and Development}{}{Nairobi, Kenya}{}{{}
+  \begin{itemize}
+  \item For ASARECA: Provide strategic and technical leadership on integrating ICTs into ASARECA’s Knowledge and Communication Strategy.
+  \item For FAO: Lead the development of the Livestock Drought Management tool. 
+  \item For the University of Edinburgh: Redesign the database for the project on Infectious Diseases of East African Livestock.
+  \item For ILRI: Implement diverse data management tools.  
+  \end{itemize}}
+\cventry{2003--2009}{Visiting Scientist}{International Livestock Research Institute}{Nairobi, Kenya}{}{{}
+\begin{itemize}
+\item Sociological research related to the dissemination and adoption of livestock knowledge.
+\item Programme diverse agricultural information systems.
+\end{itemize}}
+\cventry{1996--2003}{Software Developer}{Sistemas del Orbe}{Costa Rica}{}{{}}
 
 \section{Languages}
-\cvitemwithcomment{English}{Native}{Written and spoken}
-\cvitemwithcomment{Swahili}{Intermediate}{Written and spoken}
-\cvitemwithcomment{Bulgarian}{Beginner}{Written and spoken}
+\cvitemwithcomment{Spanish}{Mother tongue}{}
+\cvitemwithcomment{English}{Proficient}{Speaking, reading and writing}
+\cvitemwithcomment{French}{Beginner}{Speaking and reading}
 
-\section{Interests}
-\cvitem{Android}{Porting Android to new devices}
-\cvitem{Open-source}{Contributing to open-source software projects}
-\cvitem{Community}{\href{https://nairobilug.or.ke}{Nairobi GNU/Linux Users Group}}
-\cvitem{Blogging}{\href{https://alaninkenya.org}{Personal adventures in Kenya}, \href{https://mjanja.ch}{Adventures in "underground" tech}}
-\cvitem{GNU/Linux}{Arch Linux, CentOS, Debian, Fedora, Gentoo, Ubuntu}
-\cvitem{The Universe}{The Sloan Great Wall, The Huge-Large Quasar Group, 42}
+\section{Skills}
+\cvitem{Managerial}{Project management, Team management and leadership, Agile methodologies}
+\cvitem{Programming}{C++, Python, Java, JavaScript, CSS, HTML5}
+\cvitem{Databases}{MySQL, Oracle, MS SQL, PostgreSQL}
+\cvitem{Platforms}{Linux, Windows, Android}
+
+\section{Key information systems developed}
+\cvitem{ODK Tools}{A toolbox for automating Research Data Management using ODK and MySQL databases. Available at https://github.com/ilri/odktools}
+\cvitem{ODK Viewer}{An Android App to visualise ODK data on mobile devices. Available at https://github.com/ilri/odkviewer}
 
 %\renewcommand{\listitemsymbol}{-~}            % change the symbol for lists
 
 % Publications from a BibTeX file without multibib
 %  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
 %  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-%\nocite{*}
-%\bibliographystyle{plain}
-%\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+\renewcommand{\refname}{Key publications}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                   % 'publications' is the name of a BibTeX file
+
+\section{References}
+\cvitemwithcomment{Dr. Mario Herrero}{Chief Research Scientist. CSIRO}{mario.herrero@csiro.au}
+\cvitemwithcomment{Ms. Jane Poole}{Leader Research Methods Group. ILRI}{j.poole@cgiar.org}
+\cvitemwithcomment{Dr. Roger Day}{Deputy Director for Development. CABI}{r.day@cabi.org}
 
 % Publications from a BibTeX file using the multibib package
 %\section{Publications}

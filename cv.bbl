@@ -1,0 +1,16 @@
+\begin{thebibliography}{1}
+
+\bibitem{book1}
+Quiros C., Thornton~P. K., Herrero M., Notenbaert A., and Gonzalez-Estrada E.
+\newblock {\em GOBLET: An open-source geographic overlaying database and query
+  module for spatial targeting in agricultural systems}.
+\newblock Computers and Electronics in Agriculture, 68(1), 2009.
+
+\bibitem{book2}
+Herrero M., González-Estrada E., Thorton P.~K. an~Quiros C.~an Waithaka M.~M.,
+  Ruiz R., and Hoogenboom G.
+\newblock {\em IMPACT: Generic household databases and diagnostics tools for
+  integrated crop – livestock systems analysis}.
+\newblock Agricultural Systems, 92(1-3), 2007.
+
+\end{thebibliography}

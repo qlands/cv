@@ -1,18 +1,11 @@
-## Curriculum Vitae for Alan Orth
-A CV written in LaTeX using the [moderncv](http://www.ctan.org/pkg/moderncv) class.
+## Curriculum Vitae for Carlos Quiros
+My CV written in LaTeX using the [moderncv](http://www.ctan.org/pkg/moderncv) class. Forked from Allan Orth's.
 
 ### Sample
 Here's what it looks like with real data, using the "classic" style and blue color scheme:
 
 ![Image](/cv_sample.png?raw=true "Sample CV")
 
-### Why
-I decided to start keeping my CV in LaTeX because:
-
-* I can never find my CV when I need it
-* I have dozens of files named `resume.doc` on my computer
-* LaTeX -> PDF ensures a consistent, beautiful layout
-* Writing your CV in a source-based language means you can track it in git (w00t!)
 
 ### Usage
 To "build" a PDF you simply type:
@@ -22,6 +15,9 @@ To "build" a PDF you simply type:
 To clean up all generated and intermediate content, type:
 
     $ make clean
+    
+If you change publications.bib then you need to run:
+    $ bibtex cv
 
 ### Pre-requistes for building
 Depending on your GNU/Linux distribution the package names may be different. Basically, you need the `texlive` package, as well as whichever "extras" package contains the moderncv stuff.
