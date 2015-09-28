@@ -17,6 +17,7 @@ To clean up all generated and intermediate content, type:
     $ make clean
     
 If you change publications.bib then you need to run:
+
     $ bibtex cv
 
 ### Pre-requistes for building
